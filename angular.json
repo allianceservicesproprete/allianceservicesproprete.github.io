@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/alliance-proprete/",
             "outputPath": "dist/alliance-proprete",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -33,15 +34,14 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
             ]
           },
           "configurations": {
             "production": {
+              "baseHref": "/alliance-proprete/",
               "budgets": [
                 {
                   "type": "initial",
@@ -96,11 +96,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
             ]
           }
         }

@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TermsOfUseComponent } from './pages/terms-of-use/terms-of-use.component';
 import { CareersComponent } from './pages/careers/careers.component';
+import { CsrComponent } from './pages/csr/csr.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,4 +14,6 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'terms-of-use', component: TermsOfUseComponent},
   { path: 'careers', component: CareersComponent },
+  { path: 'csr', component: CsrComponent },
+
 ];

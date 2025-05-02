@@ -14,7 +14,6 @@
   i {
     color: #2d4aa5;
   }
-  
 
   .btn-primary {
     background-color: #2d4aa5;
@@ -22,6 +21,11 @@
     padding: 0.6rem 2rem;
     font-weight: bold;
     border-radius: 6px;
+  }
+  
+  .btn-primary:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
   }
 
   .map-container iframe {

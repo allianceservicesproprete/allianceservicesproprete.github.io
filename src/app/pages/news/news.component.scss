@@ -62,7 +62,7 @@
   }
 
   .btn-news:hover {
-    background-color: #2f417d;
-    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
   }
 }

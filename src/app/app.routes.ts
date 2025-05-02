@@ -6,6 +6,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { TermsOfUseComponent } from './pages/terms-of-use/terms-of-use.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { CsrComponent } from './pages/csr/csr.component';
+import { NewsComponent } from './pages/news/news.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,5 +16,9 @@ export const routes: Routes = [
   { path: 'terms-of-use', component: TermsOfUseComponent},
   { path: 'careers', component: CareersComponent },
   { path: 'csr', component: CsrComponent },
+  { path: 'csr', component: CsrComponent },
+  { path: 'news', component: NewsComponent },
+  //{ path: 'news/:id', component: NewsDetailComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 
 ];

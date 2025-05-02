@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Acquisition du label Alsace Excellence",
+    "date": "02/12/24",
+    "resume": "Nous sommes fiers d’annoncer que notre engagement en faveur de la qualité...",
+    "image": "cleaning-office.png"
+  },
+  {
+    "id": 2,
+    "title": "Formation continue des équipes",
+    "date": "15/01/25",
+    "resume": "Nous investissons dans la formation continue pour nos équipes...",
+    "image": "team-training.png"
+  },
+  {
+    "id": 3,
+    "title": "Partenariat avec le GEIQ",
+    "date": "10/02/25",
+    "resume": "En partenariat avec le GEIQ, nous soutenons des actions de recrutement et d’intégration pour des jeunes talents dans le secteur de la propreté.",
+    "image": "geiq-partnership.png"
+  },
+  {
+    "id": 4,
+    "title": "Engagement environnemental",
+    "date": "25/03/25",
+    "resume": "Notre entreprise est engagée dans une démarche éco-responsable visant à réduire notre empreinte écologique, notamment par la gestion des déchets et l'utilisation de produits verts.",
+    "image": "environmental-commitment.png"
+  }
+]

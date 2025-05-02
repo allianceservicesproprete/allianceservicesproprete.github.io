@@ -53,6 +53,11 @@
   color: white;
 }
 
+.btn-read-more:hover {
+  background-color: #d3d3d3;
+  color: black;
+}
+
 @media (max-width: 768px) {
   .news-card img {
     display: none;

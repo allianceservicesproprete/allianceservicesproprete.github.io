@@ -1,0 +1,22 @@
+<section class="news-section py-5">
+  <div class="container">
+    <h2 class="section-title">Nos actualités</h2>
+    <p class="lead">
+      Découvrez les dernières actualités et initiatives de l'entreprise, notre engagement pour la qualité, et les événements marquants qui façonnent notre avenir.
+    </p>
+    
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let article of articles">
+        <div class="news-card">
+          <img [src]="article.image" alt="News" class="img-fluid w-100 rounded">
+          <div class="news-overlay p-4">
+            <small class="text-end">{{ article.date }}</small>
+            <h3 class="mt-2">{{ article.title }}</h3>
+            <p class="small">{{ article.resume }}</p>
+            <a [routerLink]="['/news', article.id]" class="btn btn-news align-self-start mt-2">EN LIRE PLUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

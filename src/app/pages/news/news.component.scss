@@ -1,0 +1,68 @@
+.news-section {
+  .section-title {
+    color: #2d4aa5;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: #2d4aa5;
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  .news-card {
+    display: flex; /* Utilisation de flexbox pour organiser le contenu verticalement */
+    flex-direction: column; /* Les éléments seront organisés de haut en bas */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* La carte occupe toute la hauteur disponible */
+  }
+
+  .news-card img {
+    width: 100%;
+    height: 300px; /* Fixe la hauteur des images à une taille uniforme */
+  }
+
+  .news-overlay {
+    padding: 1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .news-overlay h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .news-overlay p {
+    flex-grow: 1; /* Permet au texte de grandir et d'occuper l'espace restant */
+  }
+
+  .btn-news {
+    background-color: #2d4aa5;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .btn-news:hover {
+    background-color: #2f417d;
+    text-decoration: none;
+  }
+}

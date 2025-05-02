@@ -20,19 +20,14 @@
         <a routerLink="/news" class="btn btn-news align-self-start">VOIR PLUS</a>
       </div>
       
-      <div class="col-md-7 pe-0">
+      <div class="col-md-7 pe-0" *ngIf="latestNews">
         <div class="news-card position-relative text-white">
-          <img src="cleaning-office.png" alt="News" class="img-fluid w-100 rounded">
+          <img [src]="latestNews.image" [alt]="latestNews.title" class="img-fluid w-100 rounded">
           <div class="news-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
-            <small class="text-end">02/12/24</small>
-            <h4 class="mt-2">Acquisition du label<br>Alsace Excellence</h4>
-            <p class="small">
-              Nous sommes fiers d’annoncer que notre engagement en faveur de la qualité, de l’éthique et du 
-              développement durable a été reconnu par l’obtention du label Alsace Excellence. 
-              Cette distinction reflète notre volonté constante d’améliorer nos pratiques et de valoriser 
-              le savoir-faire local.
-            </p>            
-            <a href="#" class="btn btn-read-more align-self-start mt-2">EN LIRE PLUS</a>
+            <small class="text-end">{{ latestNews.date }}</small>
+            <h4 class="mt-2" [innerHTML]="latestNews.title"></h4>
+            <p class="small">{{ latestNews.resume }}</p>
+            <a [routerLink]="['/news', latestNews.id]" class="btn btn-read-more align-self-start mt-2">EN LIRE PLUS</a>
           </div>
         </div>
       </div>

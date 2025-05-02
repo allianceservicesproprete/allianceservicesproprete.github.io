@@ -1,0 +1,20 @@
+<section class="article-detail py-5" *ngIf="article">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <button (click)="goBack()" class="btn btn-link mb-4 p-0">
+          ← Retour
+        </button>
+
+        <img [src]="article.image" alt="Image de l'article" class="img-fluid w-100 rounded mb-4">
+
+        <h1 class="article-title">{{ article.title }}</h1>
+        <p class="article-date text-muted">{{ article.date }}</p>
+
+        <div class="article-body mt-4">
+          <div [innerHTML]="article.content"></div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</section>

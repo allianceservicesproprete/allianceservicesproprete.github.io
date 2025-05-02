@@ -7,6 +7,7 @@ import { TermsOfUseComponent } from './pages/terms-of-use/terms-of-use.component
 import { CareersComponent } from './pages/careers/careers.component';
 import { CsrComponent } from './pages/csr/csr.component';
 import { NewsComponent } from './pages/news/news.component';
+import { ArticleDetailComponent } from './pages/article-detail/article-detail.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +19,7 @@ export const routes: Routes = [
   { path: 'csr', component: CsrComponent },
   { path: 'csr', component: CsrComponent },
   { path: 'news', component: NewsComponent },
-  //{ path: 'news/:id', component: NewsDetailComponent },
+  { path: 'news/:id', component:ArticleDetailComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 
 ];

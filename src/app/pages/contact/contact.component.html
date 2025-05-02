@@ -12,7 +12,7 @@
 
 <section class="contact-section py-5">
   <div class="container">
-    <h2 class="section-title">Contactez <b>notre équipe</b></h2>
+    <h2 class="section-title">Contactez notre équipe</h2>
     <p class="lead">
       Vous avez une question, besoin d’un devis ou souhaitez collaborer avec nous ? Nous sommes à votre écoute.
     </p>
@@ -42,7 +42,7 @@
             </div>
         
             <div class="col-md-6">
-              <select class="form-select form-select-lg" formControlName="subject"
+              <select class="form-select" formControlName="subject"
                 [ngClass]="{'is-invalid': f['subject'].touched && f['subject'].invalid}">
                 <option value="" disabled selected hidden>Objet de votre demande</option>
                 <option value="Devis">Demande de devis</option>
@@ -62,9 +62,9 @@
             <div class="invalid-feedback">Veuillez saisir un message.</div>
           </div>
         
-          <div class="d-flex justify-content-between align-items-center mt-4 mb-5">
+          <div class="d-flex justify-content-between align-items-center mt-2">
             <button type="submit" class="btn btn-primary">Envoyer</button>
-            </div>
+          </div>
         </form>
 
         <div class="mt-3">

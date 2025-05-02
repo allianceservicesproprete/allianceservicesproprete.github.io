@@ -1,28 +1,28 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormService } from '../../services/form.service';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-quote',
   standalone: true,
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  templateUrl: './quote.component.html',
+  styleUrl: './quote.component.scss'
 })
-export class ContactComponent {
-  contactForm: FormGroup;
+export class QuoteComponent {
+  quoteForm: FormGroup;
   successMessage = '';
-  
+
   constructor(
     private formService: FormService,
-    private fb: FormBuilder
-  ) {
-    this.contactForm = this.fb.group({
+    private fb: FormBuilder) {
+    this.quoteForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
       phone: [''],
@@ -30,24 +30,22 @@ export class ContactComponent {
       message: ['', Validators.required]
     });
   }
-  
-  
-  
+
   onSubmit(): void {
-    if (this.contactForm.valid) {
-      this.formService.sendFormData(this.contactForm.value).subscribe((response: any) => {
+    if (this.quoteForm.valid) {
+      this.formService.sendFormData(this.quoteForm.value).subscribe((response: any) => {
         this.successMessage = 'Votre message a bien été envoyé.';
-        this.contactForm.reset();
+        this.quoteForm.reset();
       }, error => {
         console.error('Erreur lors de l\'envoi du formulaire:', error);
       });
     } else {
-      this.successMessage = '';
-      this.contactForm.markAllAsTouched();
-    }
+        this.successMessage = '';
+        this.quoteForm.markAllAsTouched();
+    } 
   }
-  
+
   get f() {
-    return this.contactForm.controls;
+    return this.quoteForm.controls;
   }
 }

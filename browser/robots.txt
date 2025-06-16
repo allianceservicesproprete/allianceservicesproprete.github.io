@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://allianceservicesproprete.github.io/sitemap.xml
